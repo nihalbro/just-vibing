@@ -26,3 +26,7 @@ h1.glow {
   color: #6b7280;
   transition: opacity 0.3s ease;
 }
+
+#vibe-audio {
+  display: none;
+}
