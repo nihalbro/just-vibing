@@ -4,41 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Just Vibing</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #111827, #1f2937);
-      color: #f9fafb;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      flex-direction: column;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #9ca3af;
-    }
-    .glow {
-      color: #fff;
-      text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff, 0 0 40px #00f7ff;
-      animation: float 2s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 class="glow">No Pressure, Just Vibes 🌌</h1>
-  <p>Take a deep breath. Enjoy the silence.</p>
+  <div class="container">
+    <h1 class="glow">Just Vibing 🌌</h1>
+    <p class="quote">“You don't need a reason to exist.”</p>
+  </div>
+
+  <script>
+    // Cool feature: Random quotes (you can add your own)
+    const quotes = [
+      "No pressure, just vibes.",
+      "Breathe in peace. Exhale chaos.",
+      "Slow is smooth. Smooth is fast.",
+      "You don't need a reason to exist.",
+      "Just vibing. Nothing more, nothing less."
+    ];
+
+    const quoteEl = document.querySelector('.quote');
+    setInterval(() => {
+      const random = Math.floor(Math.random() * quotes.length);
+      quoteEl.textContent = quotes[random];
+    }, 4000);
+  </script>
 </body>
 </html>
