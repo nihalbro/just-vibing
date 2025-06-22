@@ -2,18 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Just Vibing 🌦️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just Vibing 🌤️</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1 class="glow">Just Vibing</h1>
-    <p class="quote">Auto-weather vibes loading...</p>
-    <audio id="vibe-audio" preload="auto"></audio>
+    <h1 class="glow">Just Vibing 🎧</h1>
+    <p class="quote">Click the button to vibe with your weather</p>
+    <button id="startBtn">Start Vibe</button>
+
+    <!-- YouTube Lofi Stream Embed -->
+    <iframe
+      id="youtube-lofi"
+      width="0"
+      height="0"
+      style="display: none; margin-top: 20px; border-radius: 12px;"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+
+    <!-- Pokémon Vibe Sprite -->
+    <img
+      id="pokemon"
+      src=""
+      alt="Vibing Pokémon"
+      style="display: none; width: 150px; margin-top: 20px;"
+    />
   </div>
 
-  <!-- Link to external JS file -->
   <script src="script.js"></script>
 </body>
 </html>
+
