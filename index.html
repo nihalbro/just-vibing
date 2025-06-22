@@ -3,36 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Just Vibing 🌤️</title>
+  <title>Just Vibing ⚡</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1 class="glow">Just Vibing 🎧</h1>
-    <p class="quote">Click the button to vibe with your weather</p>
-    <button id="startBtn">Start Vibe</button>
+    <h1 class="quote">Loading your vibe...</h1>
+    
+    <!-- Pokéball loader -->
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" id="pokeball-loader" alt="Loading Pokéball" />
 
-    <!-- YouTube Lofi Stream Embed -->
-    <iframe
-      id="youtube-lofi"
-      width="0"
-      height="0"
-      style="display: none; margin-top: 20px; border-radius: 12px;"
-      frameborder="0"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-    ></iframe>
+    <p id="poke-name" class="poke-name"></p>
+    <p id="poke-quote" class="poke-quote"></p>
 
-    <!-- Pokémon Vibe Sprite -->
     <img
       id="pokemon"
       src=""
       alt="Vibing Pokémon"
-      style="display: none; width: 150px; margin-top: 20px;"
+      style="display: none; width: 150px; margin-top: 20px; cursor: pointer;"
     />
+
+    <p id="poke-reaction" style="display: none; font-style: italic; margin-top: 6px;"></p>
+
+    <!-- Lofi YouTube Embed -->
+    <iframe
+      id="youtube-lofi"
+      width="0"
+      height="0"
+      style="display: none;"
+      src=""
+      title="lofi music"
+      frameborder="0"
+      allow="autoplay"
+      allowfullscreen
+    ></iframe>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
